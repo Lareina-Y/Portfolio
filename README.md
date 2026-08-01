@@ -1,98 +1,85 @@
-# vinext-starter
+# Lareina Yang — Software Engineering Portfolio
 
-A clean full-stack starter running on
-[vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
-Drizzle support.
+A personal portfolio showcasing my work across full-stack engineering, applied AI, software systems, robotics, and research.
 
-## Prerequisites
+The site brings together selected projects, professional experience, technical strengths, and an interactive project archive in a responsive, editorial-style interface.
 
-- Node.js `>=22.13.0`
+## Highlights
 
-## Quick Start
+- Curated case studies spanning AI products, software systems, robotics, XR, and research
+- Filterable project archive with project details, outcomes, and repository links
+- Professional experience and education presented in a concise, recruiter-friendly format
+- Responsive layouts, motion-driven interactions, and accessible navigation
+
+## Tech Stack
+
+- **Framework:** Next.js 16, React 19, TypeScript
+- **Runtime and build:** vinext, Vite, Cloudflare tooling
+- **Styling:** Tailwind CSS 4 and custom CSS
+- **Animation:** Motion for React
+- **Icons:** Lucide React
+- **Optional data layer:** Cloudflare D1 and Drizzle ORM
+- **Quality:** ESLint and Node.js test runner
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js 22.13 or newer
+- npm
+
+### Installation
 
 ```bash
-npm install
+git clone https://github.com/Lareina-Y/Portfolio.git
+cd Portfolio
+npm ci
 npm run dev
-npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+Open the local URL shown in the terminal.
 
-## Included Shape
+## Available Commands
 
-- edit site code under `app/`
-- `.openai/hosting.json` declares optional Sites D1 and R2 bindings
-- `vite.config.ts` simulates declared bindings for local development
-- `db/schema.ts` starts intentionally empty
-- `examples/d1/` contains an optional D1 example surface
-- `drizzle.config.ts` supports local migration generation when needed
-
-## Workspace Auth Headers
-
-OpenAI workspace sites can read the current user's email from
-`oai-authenticated-user-email`.
-
-SIWC-authenticated workspace sites may also receive
-`oai-authenticated-user-full-name` when the user's SIWC profile has a non-empty
-`name` claim. The full-name value is percent-encoded UTF-8 and is accompanied by
-`oai-authenticated-user-full-name-encoding: percent-encoded-utf-8`.
-
-Treat the full name as optional and fall back to email when it is absent:
-
-```tsx
-import { headers } from "next/headers";
-
-export default async function Home() {
-  const requestHeaders = await headers();
-  const email = requestHeaders.get("oai-authenticated-user-email");
-  const encodedFullName = requestHeaders.get("oai-authenticated-user-full-name");
-  const fullName =
-    encodedFullName &&
-    requestHeaders.get("oai-authenticated-user-full-name-encoding") ===
-      "percent-encoded-utf-8"
-      ? decodeURIComponent(encodedFullName)
-      : null;
-
-  const displayName = fullName ?? email;
-  // ...
-}
+```bash
+npm run dev         # Start the local development server
+npm run build       # Create a production build
+npm start           # Start the production server
+npm test            # Build and run rendered HTML tests
+npm run lint        # Run ESLint
+npm run db:generate # Generate optional Drizzle migrations
 ```
 
-## Optional Dispatch-Owned ChatGPT Sign-In
+## Project Structure
 
-Import the ready-to-use helpers from `app/chatgpt-auth.ts` when the site needs
-optional or required ChatGPT sign-in:
+```text
+app/                 Pages, metadata, and global styles
+components/          Reusable portfolio sections and navigation
+public/assets/       Portfolio artwork and project previews
+tests/               Rendered HTML verification
+db/                  Optional Drizzle schema and database setup
+worker/              Cloudflare worker entry point
+approved-designs/    Approved visual references
+```
 
-- Use `getChatGPTUser()` for optional signed-in UI.
-- Use `requireChatGPTUser(returnTo)` for server-rendered pages that should send
-  anonymous visitors through Sign in with ChatGPT.
-- Use `chatGPTSignInPath(returnTo)` and `chatGPTSignOutPath(returnTo)` for
-  browser links or actions.
-- Pass a same-origin relative `returnTo` path for the destination after sign-in
-  or sign-out. The helper validates and safely encodes it.
-- Mark protected pages with `export const dynamic = "force-dynamic"` because
-  they depend on per-request identity headers.
+## Featured Work
 
-Dispatch owns `/signin-with-chatgpt`, `/signout-with-chatgpt`, `/callback`, the
-OAuth cookies, and identity header injection. Do not implement app routes for
-those reserved paths. Routes that do not import and call the helper remain
-anonymous-compatible.
+The portfolio currently highlights projects including:
 
-SIWC establishes identity only; it does not prove workspace membership. Use the
-Sites hosting platform's access policy controls for workspace-wide restrictions,
-or enforce explicit server-side membership or allowlist checks.
+- **TaskMosaic** — AI-assisted project planning and task prioritization
+- **AI Art Detector** — Interpretable classification of AI-generated artwork
+- **Tom's Target** — Vision-based target selection for human-robot interaction
+- **Ticket Viewer** — GIS-based infrastructure conflict visualization
+- **STRICT++** — Research into software change-request patterns
+- **BlueTiSCH** — Reliable industrial wireless networking research
 
-Use SIWC for account pages, user-specific dashboards, saved records, and write
-actions tied to the current ChatGPT user. Leave public content anonymous.
+Explore the full archive through the **All Projects** page in the portfolio.
 
-## Useful Commands
+## Connect
 
-- `npm run dev`: start local development
-- `npm run build`: verify the vinext build output
-- `npm test`: build the starter and verify its rendered loading skeleton
-- `npm run db:generate`: generate Drizzle migrations after schema changes
+- [GitHub](https://github.com/Lareina-Y)
+- [LinkedIn](https://linkedin.com/in/shiwen-lareina-yang)
 
-## Learn More
+## License
 
-- [vinext Documentation](https://github.com/cloudflare/vinext)
-- [Drizzle D1 Guide](https://orm.drizzle.team/docs/get-started/d1-new)
+This repository contains my personal portfolio content and visual assets. Please do not reuse them as your own portfolio without permission.
