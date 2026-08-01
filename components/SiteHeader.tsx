@@ -11,12 +11,34 @@ const homeSections = [
 export function SiteHeader({ currentPage = "home" }: SiteHeaderProps) {
   const onProjectsPage = currentPage === "projects";
 
-  return <header className="site-header">
-    <Link className="brand" href={onProjectsPage ? "/" : "#home"}>LAREINA</Link>
-    <nav aria-label="Primary navigation">
-      {homeSections.map(({ label, id }) => <Link key={id} href={onProjectsPage ? `/#${id}` : `#${id}`}>{label}</Link>)}
-      {onProjectsPage ? <span className="active-link">All Projects</span> : <Link href="/projects">All Projects</Link>}
-    </nav>
-    <div className="header-actions"><Link className="contact-pill" href={onProjectsPage ? "/#contact" : "#contact"}>CONTACT</Link><span><b>EN</b></span></div>
-  </header>;
+  return (
+    <header className="site-header">
+      <Link className="brand" href={onProjectsPage ? "/" : "#home"}>
+        LAREINA
+      </Link>
+      <nav aria-label="Primary navigation">
+        {homeSections.map(({ label, id }) => (
+          <Link key={id} href={onProjectsPage ? `/#${id}` : `#${id}`}>
+            {label}
+          </Link>
+        ))}
+        {onProjectsPage ? (
+          <span className="active-link">All Projects</span>
+        ) : (
+          <Link href="/projects">All Projects</Link>
+        )}
+      </nav>
+      <div className="header-actions">
+        <Link
+          className="contact-pill"
+          href={onProjectsPage ? "/#contact" : "#contact"}
+        >
+          CONTACT
+        </Link>
+        <span>
+          <b>EN</b>
+        </span>
+      </div>
+    </header>
+  );
 }

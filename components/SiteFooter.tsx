@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { ArrowUp, ArrowUpRight, ContactRound, GitFork, Mail } from "lucide-react";
+import {
+  ArrowUp,
+  ArrowUpRight,
+  ContactRound,
+  GitFork,
+  Mail,
+} from "lucide-react";
 
 export function ContactSection() {
   return (
@@ -14,7 +20,8 @@ export function ContactSection() {
           <div>
             <p>HAVE A PROJECT OR AN IDEA?</p>
             <h2>
-              LET&apos;S BUILD<br />
+              LET&apos;S BUILD
+              <br />
               <span>SOMETHING THOUGHTFUL.</span>
             </h2>
           </div>
@@ -25,9 +32,28 @@ export function ContactSection() {
         </div>
 
         <div className="footer-links">
-          <a href="mailto:shiwen.y@outlook.com"><Mail aria-hidden="true" />shiwen.y@outlook.com</a>
-          <a href="https://linkedin.com/in/shiwen-lareina-yang" target="_blank" rel="noreferrer"><ContactRound aria-hidden="true" />LinkedIn<ArrowUpRight aria-hidden="true" /></a>
-          <a href="https://github.com/Lareina-Y" target="_blank" rel="noreferrer"><GitFork aria-hidden="true" />GitHub<ArrowUpRight aria-hidden="true" /></a>
+          <a href="mailto:shiwen.y@outlook.com">
+            <Mail aria-hidden="true" />
+            shiwen.y@outlook.com
+          </a>
+          <a
+            href="https://linkedin.com/in/shiwen-lareina-yang"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ContactRound aria-hidden="true" />
+            LinkedIn
+            <ArrowUpRight aria-hidden="true" />
+          </a>
+          <a
+            href="https://github.com/Lareina-Y"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <GitFork aria-hidden="true" />
+            GitHub
+            <ArrowUpRight aria-hidden="true" />
+          </a>
         </div>
       </div>
     </section>
@@ -41,7 +67,9 @@ export function SiteFooter() {
         <div className="page-shell footer-bottom">
           <span>@ {new Date().getFullYear()} LAREINA YANG</span>
           <span>DESIGNED &amp; BUILT WITH CODEX</span>
-          <Link href="#home">BACK TO TOP <ArrowUp aria-hidden="true" /></Link>
+          <Link href="#home">
+            BACK TO TOP <ArrowUp aria-hidden="true" />
+          </Link>
         </div>
       </div>
     </footer>
