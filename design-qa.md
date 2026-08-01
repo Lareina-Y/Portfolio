@@ -13,7 +13,7 @@
 - Strengths and Contact now join without a divider; Contact was reduced to 661px with no gap between its main CTA and link row.
 - All five Strengths cards share the same hover animation selector and rotated keyword treatment.
 - More Projects has 36px of space below it before About begins.
-- About uses the revised `about-lareina-shoes.png` asset with powder-blue and white retro sneakers based on the supplied footwear reference.
+- About uses the revised `about-lareina.png` asset with powder-blue and white retro sneakers based on the supplied footwear reference.
 - Experience now uses a script-style display face, a softly extended raster light trail, and reference-aligned dates, nodes, axis, and cards.
 - Home includes a visible More Projects link between Selected Projects and About.
 - Header brand uses the lime treatment with white text; right-side language controls have additional breathing room.
