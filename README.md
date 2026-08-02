@@ -1,5 +1,7 @@
 # Lareina Yang — Software Engineering Portfolio
 
+https://portfolio.lareinay.workers.dev/
+
 A personal portfolio showcasing my work across full-stack engineering, applied AI, software systems, robotics, and research.
 
 The site brings together selected projects, professional experience, technical strengths, and an interactive project archive in a responsive, editorial-style interface.

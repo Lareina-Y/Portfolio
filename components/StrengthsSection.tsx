@@ -13,14 +13,14 @@ const strengths = [
   {
     n: "01",
     title: "END-TO-END\nENGINEERING",
-    tags: ["INTERFACE → API", "DATA → CLOUD", "IDEA → DELIVERY"],
+    tags: ["UI → API", "DATABASE → CLOUD", "IDEA → DELIVERY"],
     icon: Braces,
     large: true,
   },
   {
     n: "02",
     title: "APPLIED\nINTELLIGENCE",
-    tags: ["MACHINE LEARNING", "GENERATIVE AI", "INTERPRETABLE SYSTEMS"],
+    tags: ["MACHINE LEARNING", "AI AGENTS", "LLM APPLICATIONS"],
     icon: Sparkles,
     large: true,
     featured: true,
@@ -28,19 +28,19 @@ const strengths = [
   {
     n: "03",
     title: "SYSTEMS\nTHINKING",
-    tags: ["ARCHITECTURE", "PERFORMANCE", "RELIABILITY"],
+    tags: ["ARCHITECTURE", "SCALABILITY", "RELIABILITY"],
     icon: Network,
   },
   {
     n: "04",
     title: "RESEARCH\nDEPTH",
-    tags: ["946 CHANGE REQUESTS", "TEXT GRAPHS", "EVALUATION"],
+    tags: ["RESEARCH", "QUICK LEARNING", "VALIDATION"],
     icon: GraduationCap,
   },
   {
     n: "05",
     title: "CROSS-FUNCTIONAL\nDELIVERY",
-    tags: ["COLLABORATION", "PRODUCT JUDGMENT", "OWNERSHIP"],
+    tags: ["COLLABORATION", "COMMUNICATION", "OWNERSHIP"],
     icon: Users,
   },
 ];

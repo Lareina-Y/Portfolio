@@ -606,12 +606,12 @@
 .more-projects {
   position: absolute;
   left: 50%;
-  bottom: -34px;
+  bottom: -40px;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
   gap: 9px;
-  color: var(--lime);
+  color: #fff;
   font: 700 12px var(--font-mono);
   letter-spacing: 0.16em;
   white-space: nowrap;
@@ -621,7 +621,7 @@
 }
 .more-projects:hover {
   gap: 15px;
-  color: #fff;
+  color: var(--lime);
 }
 .more-projects svg {
   width: 16px;

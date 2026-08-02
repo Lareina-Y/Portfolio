@@ -1,23 +1,31 @@
 "use client";
 
-import { Box, Microscope, Users } from "lucide-react";
+import { Box, Microscope, Rocket, Users } from "lucide-react";
 import { motion } from "motion/react";
 
 const experiences = [
   {
+    period: "JAN — AUG 2025",
+    company: "Livinit",
+    role: "Co-Founder & Software Developer",
+    text: "Co-founded an AI-powered interior design platform, leading end-to-end development from product validation to MVP using SwiftUI, Firebase, RoomPlan, and LLM-powered recommendations.",
+    tags: ["SwiftUI", "AI Integration", "Xcode", "Firebase", "Startup", "MVP"],
+    icon: Rocket,
+  },
+  {
     period: "SEP 2022 — DEC 2023",
     company: "ReelData AI",
     role: "Software Developer",
-    text: "Shipped end-to-end product features across React, GraphQL, Spring Boot, and PostgreSQL, improving reliability and the daily workflows of aquaculture teams.",
-    tags: ["React", "GraphQL", "Spring Boot", "PostgreSQL"],
+    text: "Shipped end-to-end Biomass camera product features across React, GraphQL, Spring Boot, and PostgreSQL, improving reliability and the daily workflows of aquaculture teams.",
+    tags: ["React", "Java", "GraphQL", "Spring Boot", "PostgreSQL"],
     icon: Box,
   },
   {
     period: "JAN — APR 2022",
     company: "Collab · Dear Life",
     role: "Full-stack Developer",
-    text: "Built product experiences across frontend, backend, and cloud infrastructure in a cross-functional development team.",
-    tags: ["React", "Node.js", "AWS", "Product Delivery"],
+    text: "Built product experiences across frontend authentication and cloud infrastructure in a cross-functional development team.",
+    tags: ["Flutter", "Aurora MySQL", "AWS", "Product Design"],
     icon: Users,
   },
   {
@@ -79,7 +87,8 @@ export function ExperienceSection() {
           ))}
         </div>
         <p className="experience-total">
-          2+ &nbsp; YEARS OF EXPERIENCE · INTERNSHIPS INCLUDED
+          2+ &nbsp; YEARS OF EXPERIENCE 
+          {/* · INTERNSHIPS INCLUDED */}
         </p>
       </div>
     </section>

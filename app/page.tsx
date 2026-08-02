@@ -53,25 +53,25 @@ export default function Home() {
             />
           </motion.div>
           <p>
-            Building thoughtful products through
+            Full-Stack Software Engineer • AI-Native Developer
             <br />
-            full-stack engineering and applied AI.
+            Building AI-powered products with modern web technologies
           </p>
           <div className="hero-stats">
             <div>
               <b>2+</b>
               <span>
                 YEARS OF EXPERIENCE
-                <br />· INTERNSHIPS INCLUDED
+                {/* <br />· INTERNSHIPS INCLUDED */}
               </span>
             </div>
             <div>
-              <b>18</b>
-              <span>PUBLIC PROJECTS</span>
+              <b>10+</b>
+              <span>Technologies</span>
             </div>
             <div>
-              <b>3.8</b>
-              <span>CORNELL GPA</span>
+              <b>30+</b>
+              <span>BETA USERS</span>
             </div>
           </div>
         </div>
@@ -89,12 +89,11 @@ export default function Home() {
             </h2>
             <h3>Hi, I&apos;m Lareina Yang.</h3>
             <p className="body-copy">
-              I build clear, reliable products at the intersection of full-stack
-              engineering, applied AI, and human experience. With an M.Eng. in
-              Computer Science from Cornell Tech and an Honours BCS from
-              Dalhousie University, I bring research depth and product
-              pragmatism to complex problems.
-            </p>
+              I build <i><b>AI-powered full-stack applications</b></i> that combine scalable engineering with intuitive user experiences. 
+              With an M.Eng. in Computer Science from Cornell Tech and an Honours BCS from Dalhousie University, 
+              I enjoy transforming complex ideas into production-ready software.
+            </p> <br></br>
+            <p><i><b>AI-native developer</b></i> leveraging <i><b>Codex</b></i> to accelerate modern software development.</p>
           </Reveal>
           <div className="about-bottom">
             <div className="facts">
@@ -107,13 +106,13 @@ export default function Home() {
               <div>
                 <GraduationCap />
                 <span>
-                  <small>EDUCATION</small>Cornell Tech · M.Eng. CS
+                  <small>EDUCATION</small>Cornell Tech · M.Eng. CS · 3.8 GPA
                 </span>
               </div>
               <div>
                 <Sparkles />
                 <span>
-                  <small>FOUNDATION</small>Dalhousie · Honours BCS
+                  <small>FOUNDATION</small>Dalhousie · Honours BCS · 4.12 GPA
                 </span>
               </div>
               <div>
@@ -128,10 +127,10 @@ export default function Home() {
                 2+<small>YEARS OF EXPERIENCE</small>
               </b>
               <b>
-                18<small>PUBLIC PROJECTS</small>
+                10+<small>TECHNOLOGIES</small>
               </b>
               <b>
-                946<small>CHANGE REQUESTS STUDIED</small>
+                30+<small>BETA USERS</small>
               </b>
             </div>
             <SocialLinks />
