@@ -71,7 +71,7 @@ The portfolio currently highlights projects including:
 - **TaskMosaic** — AI-assisted project planning and task prioritization
 - **AI Art Detector** — Interpretable classification of AI-generated artwork
 - **Tom's Target** — Vision-based target selection for human-robot interaction
-- **Ticket Viewer** — GIS-based infrastructure conflict visualization
+- **GIS Ticket Viewer** — GIS-based infrastructure conflict visualization
 - **STRICT++** — Research into software change-request patterns
 - **BlueTiSCH** — Reliable industrial wireless networking research
 

@@ -19,6 +19,20 @@ type Filter = (typeof filters)[number];
 
 const projects = [
   {
+    name: "GIS Ticket Viewer",
+    category: "Software Systems",
+    filter: "SOFTWARE SYSTEMS",
+    year: "2026",
+    focus: "Geospatial Utility Platform",
+    image: "/assets/projects/ticket-viewer.png",
+    description:
+      "Full-stack geospatial platform for utility ticket visualization and spatial analysis. Maps infrastructure tickets and exposes spatial conflicts before they become field delays.",
+    tags: ["PostGIS", "React", "Node.js", "NestJS", "Leaflet", "REST API"],
+    metric: "Real-time",
+    metricLabel: "Spatial Queries",
+    href: "https://github.com/Lareina-Y/Ticket-Viewer",
+  },
+  {
     name: "TaskMosaic",
     category: "AI & Products",
     filter: "AI & PRODUCTS",
@@ -31,6 +45,20 @@ const projects = [
     metric: "40%",
     metricLabel: "faster planning",
     href: "https://github.com/Lareina-Y/TaskMosaic",
+  },
+  {
+    name: "Livinit",
+    category: "AI Product / iOS",
+    filter: "AI & PRODUCTS",
+    year: "2025",
+    focus: "AI Product Development Startup",
+    image: "/assets/projects/livinit.png",
+    description:
+      "AI-powered interior design assistant using LLMs and 3D room scanning. Implemented MVP; Waitlisted 30 designers & 6 manufacturers; secured 2 affiliate approvals.",
+    tags: ["SwiftUI", "3D", "AI Integration", "Xcode", "Firebase", "Market Research"],
+    metric: "120+",
+    metricLabel: "Beta Users",
+    href: "https://www.youtube.com/shorts/7sQmijroHrA",
   },
   {
     name: "AI Art Detector",
@@ -59,34 +87,6 @@ const projects = [
     metric: "High",
     metricLabel: "interactivity (4.7/7) and low negative perception (1.75/7)",
     href: "https://github.com/Lareina-Y/HRI-Tom-Target/blob/main/HRI_2025_Course_Group_6.pdf",
-  },
-  {
-    name: "Ticket Viewer GIS",
-    category: "Software Systems",
-    filter: "SOFTWARE SYSTEMS",
-    year: "2026",
-    focus: "Geospatial Utility Platform",
-    image: "/assets/projects/ticket-viewer.png",
-    description:
-      "Full-stack geospatial platform for utility ticket visualization and spatial analysis. Maps infrastructure tickets and exposes spatial conflicts before they become field delays.",
-    tags: ["PostGIS", "React", "Node.js", "NestJS", "Leaflet", "REST API"],
-    metric: "Real-time",
-    metricLabel: "Spatial Queries",
-    href: "https://github.com/Lareina-Y/Ticket-Viewer",
-  },
-  {
-    name: "Livinit",
-    category: "AI Product / iOS",
-    filter: "AI & PRODUCTS",
-    year: "2025",
-    focus: "AI Product Development Startup",
-    image: "/assets/projects/livinit.png",
-    description:
-      "AI-powered interior design assistant using LLMs and 3D room scanning. Implemented MVP; Waitlisted 30 designers & 6 manufacturers; secured 2 affiliate approvals.",
-    tags: ["SwiftUI", "3D", "AI Integration", "Xcode", "Firebase", "Market Research"],
-    metric: "120+",
-    metricLabel: "Beta Users",
-    href: "https://www.youtube.com/shorts/7sQmijroHrA",
   },
   {
     name: "STRICT++",
