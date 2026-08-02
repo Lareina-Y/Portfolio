@@ -70,7 +70,7 @@ export default function Home() {
               <span>Technologies</span>
             </div>
             <div>
-              <b>30+</b>
+              <b>120+</b>
               <span>BETA USERS</span>
             </div>
           </div>
@@ -130,7 +130,7 @@ export default function Home() {
                 10+<small>TECHNOLOGIES</small>
               </b>
               <b>
-                30+<small>BETA USERS</small>
+                120+<small>BETA USERS</small>
               </b>
             </div>
             <SocialLinks />
