@@ -92,7 +92,7 @@ const projects = [
     name: "STRICT++",
     category: "Research",
     filter: "RESEARCH",
-    year: "2024",
+    year: "2023-2024",
     focus: "Query Reformulation Technique",
     image: "/assets/projects/strict-plus-plus.png",
     description:
