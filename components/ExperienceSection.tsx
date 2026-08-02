@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 const experiences = [
   {
-    period: "JAN — AUG 2025",
+    period: "JAN — MAY 2025",
     company: "Livinit",
     role: "Co-Founder & Software Developer",
     text: "Co-founded an AI-powered interior design platform, leading end-to-end development from product validation to MVP using SwiftUI, Firebase, RoomPlan, and LLM-powered recommendations.",
