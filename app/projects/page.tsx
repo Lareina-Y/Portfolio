@@ -89,6 +89,20 @@ const projects = [
     href: "https://github.com/Lareina-Y/HRI-Tom-Target/blob/main/HRI_2025_Course_Group_6.pdf",
   },
   {
+    name: "Mini Gravity Sketch",
+    category: "Robotics & XR",
+    filter: "ROBOTICS & XR",
+    year: "2024",
+    focus: "Immersive 3D creation",
+    image: "/assets/projects/mini-gravity-sketch.png",
+    description:
+      "A lightweight spatial drawing experience for creating and manipulating forms directly in 3D.",
+    tags: ["XR", "Unity", "3D", "C#", "Spatial UI"],
+    metric: "15+",
+    metricLabel: "movement gestures implemented",
+    href: "https://sites.google.com/cornell.edu/mini-gravity-sketch/g-09",
+  },
+  {
     name: "STRICT++",
     category: "Research",
     filter: "RESEARCH",
@@ -115,20 +129,6 @@ const projects = [
     metric: "IEEE",
     metricLabel: "GLOBECOM",
     href: "https://ieeexplore.ieee.org/abstract/document/10001254",
-  },
-  {
-    name: "Mini Gravity Sketch",
-    category: "Robotics & XR",
-    filter: "ROBOTICS & XR",
-    year: "2024",
-    focus: "Immersive 3D creation",
-    image: "/assets/projects/mini-gravity-sketch.png",
-    description:
-      "A lightweight spatial drawing experience for creating and manipulating forms directly in 3D.",
-    tags: ["XR", "Unity", "3D", "C#", "Spatial UI"],
-    metric: "15+",
-    metricLabel: "movement gestures implemented",
-    href: "https://sites.google.com/cornell.edu/mini-gravity-sketch/g-09",
   },
 ] satisfies Array<{
   name: string;
